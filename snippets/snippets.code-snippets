@@ -1,0 +1,75 @@
+{
+    "React Functional Component With Interface and cn()": {
+        "prefix": "rfc",
+        "body": [
+            "import { ComponentProps } from 'react';",
+            "import { cn } from \"@/lib/utils\";",
+            "",
+            "interface ${1:ComponentName}Props extends ComponentProps<\"${2:element}\"> {};",
+            "",
+            "export function ${1:ComponentName}({ className, ...props }: ${1:ComponentName}Props ) {",
+            "const classNameMerged = cn(\"${3:}\", className);",
+            "",
+            "  return (",
+            "    <${2:element} className={classNameMerged)} {...props}>",
+            "      ${0:ComponentContent}",
+            "    </${2:element}>",
+            "  );",
+            "};",
+            ""
+        ],
+        "description": "React Functional Component with cn()"
+    },
+    "NextJS Async Server Page Component": {
+        "prefix": "nasc",
+        "body": [
+            "import { ComponentProps } from 'react';",
+            "",
+            "interface ${1:ComponentName}PageProps extends ComponentProps<\"${2:element}\"> {};",
+            "",
+            "export default async function ${1:ComponentName}Page() {",
+            "  return (",
+            "    <${2:element} className={\"\"}>",
+            "      ${0:ComponentContent}",
+            "    </${2:element}>",
+            "  );",
+            "};",
+            ""
+        ]
+    },
+    "NextJS Server Page Component": {
+        "prefix": "nsc",
+        "body": [
+            "import { ComponentProps } from 'react';",
+            "",
+            "interface ${1:ComponentName}PageProps extends ComponentProps<\"${2:element}\"> {};",
+            "",
+            "export default function ${1:ComponentName}Page() {",
+            "  return (",
+            "    <${2:element} className={\"\"}>",
+            "      ${0:ComponentContent}",
+            "    </${2:element}>",
+            "  );",
+            "};",
+            ""
+        ]
+    },
+    "NextJS Client Page Component": {
+        "prefix": "ncc",
+        "body": [
+            "\"use client\";",
+            "import { ComponentProps } from 'react';",
+            "",
+            "interface ${1:ComponentName}PageProps extends ComponentProps<\"${2:element}\"> {};",
+            "",
+            "export default function ${1:ComponentName}Page() {",
+            "  return (",
+            "    <${2:element} className={\"\"}>",
+            "      ${0:ComponentContent}",
+            "    </${2:element}>",
+            "  );",
+            "};",
+            ""
+        ]
+    },
+}
