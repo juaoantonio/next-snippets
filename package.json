@@ -1,5 +1,6 @@
 {
   "name": "encibralabs-nextjs-snippets",
+  "publisher": "encibralabs",
   "displayName": "NextJS 13/14 Snippets (EncibraLabs)",
   "description": "Snippets for NextJS 13/14 development",
   "version": "0.0.2",
